@@ -1,4 +1,4 @@
-# Forecast Promtur - Tráfico Orgánico
+# Forecast de Canales GA4
 
 Predicción de métricas de tráfico orgánico para 2026 usando Prophet de Facebook.
 
@@ -57,9 +57,9 @@ Tu archivo debe incluir estas columnas:
   - Métricas en filas, meses en columnas
   - Duración en segundos Y formato HH:MM:SS
 
-### Gráficos (28 total)
+### Gráficos
 - Comparativa histórico 2025 vs predicción 2026
-- 4 métricas × 7 canales
+- 4 gráficos por canal (sessions, bounce_rate, views_per_session, avg_session_duration)
 - Intervalos de confianza visualizados
 - Advertencias para canales poco confiables
 
@@ -126,6 +126,3 @@ Ver `requirements.txt` para lista completa.
 1. Validar predicciones vs datos reales de enero-febrero 2026
 2. Ajustar modelos si MAPE > 30%
 3. Considerar factores externos (campañas, estacionalidad)
-4. Documentar cambios de algoritmo de Google
-
----
