@@ -10,7 +10,7 @@ Selecciona el notebook según tus datos:
 
 ### Forecast de métricas completas
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arisbyte/forecast-promtur-organic/blob/main/notebooks/00_pipeline_completo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arisbyte/forecast-promtur-organic/blob/main/notebooks/00_pipeline_session-scope_colab.ipynb)
 
 **Métricas predichas:**
 - Sesiones
@@ -22,7 +22,7 @@ Selecciona el notebook según tus datos:
 
 ### Forecast de usuarios
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arisbyte/forecast-promtur-organic/blob/main/notebooks/00_pipeline_users_colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arisbyte/forecast-promtur-organic/blob/main/notebooks/00_pipeline_user-scope_colab.ipynb)
 
 **Métrica predicha:**
 - Usuarios
