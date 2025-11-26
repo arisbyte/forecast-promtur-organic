@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Entorno virtual
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Datos sensibles (puedes ajustar según necesites)
+data/raw/*.csv
+data/processed/*.csv
+*.xlsx
+*.xls
+
+# Configuración local
+.env
+config.local.py
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Resultados y modelos (opcional, depende si quieres versionar)
+models/*.pkl
+models/*.joblib
+results/
