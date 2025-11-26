@@ -62,7 +62,7 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 |---------|-------------|
 | `Year` | Año (2025) |
 | `Month` | Mes (1-12) |
-| `Channel` | Canal (Organic Search, Direct, etc.) |
+| `Channel` | Canal (Organic Search, AI Traffic, etc.) |
 | `Sessions` | Total de sesiones |
 | `Bounces` | Total de rebotes |
 | `Total session duration` | Duración total en segundos |
@@ -76,7 +76,7 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 |---------|-------------|
 | `Year` | Año (2025) |
 | `Month` | Mes (1-12) |
-| `Channel` | Canal (Organic Search, Direct, etc.) |
+| `Channel` | Canal (Organic Search, AI Traffic, etc.) |
 | `Users` | Total de usuarios |
 
 **Nota:** Al subir tu archivo en Colab, será renombrado automáticamente al nombre esperado.
