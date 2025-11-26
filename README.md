@@ -61,12 +61,12 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 | Columna | Descripción |
 |---------|-------------|
 | `Year` | Año (2025) |
-| `Month number` | Mes (1-12) |
-| `Session Default Channel Group Custom (Recovery)` | Canal (Organic Search, Direct, etc.) |
-| `Sessions - GA4` | Total de sesiones |
+| `Month` | Mes (1-12) |
+| `Channel` | Canal (Organic Search, Direct, etc.) |
+| `Sessions` | Total de sesiones |
 | `Bounces` | Total de rebotes |
-| `Total session duration - GA4` | Duración total en segundos |
-| `Views - GA4` | Total de vistas |
+| `Total session duration` | Duración total en segundos |
+| `Views` | Total de vistas |
 
 ### Para usuarios
 
@@ -75,9 +75,9 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 | Columna | Descripción |
 |---------|-------------|
 | `Year` | Año (2025) |
-| `Month number` | Mes (1-12) |
-| `Session Default Channel Group Custom (Recovery)` | Canal (Organic Search, Direct, etc.) |
-| `Total Users - GA4` | Total de usuarios |
+| `Month` | Mes (1-12) |
+| `Channel` | Canal (Organic Search, Direct, etc.) |
+| `Users` | Total de usuarios |
 
 **Nota:** Al subir tu archivo en Colab, será renombrado automáticamente al nombre esperado.
 
