@@ -5,6 +5,7 @@ numpy>=1.24.0
 # Visualización
 matplotlib>=3.7.0
 seaborn>=0.12.0
+plotly>=5.18.0 
 
 # Forecasting
 statsmodels>=0.14.0
