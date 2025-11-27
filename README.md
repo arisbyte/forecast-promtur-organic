@@ -50,6 +50,30 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 4. Sube tu CSV de GA4 cuando se te pida
 5. Descarga los resultados en ZIP al finalizar
 
+### Entorno local
+
+1. Clona el repositorio
+2. Instala dependencias: `pip install -r requirements.txt`
+3. Coloca tu CSV en la carpeta correspondiente
+4. Ejecuta el notebook desde Jupyter
+
+---
+
+## Detección automática de canales
+
+Ambos notebooks detectan automáticamente si tu dataset incluye la columna `Channel`:
+
+**Con columna Channel:**
+- Análisis separado por canal (Organic Search, Direct, AI Traffic, etc.)
+- Genera modelos, gráficos y tablas individuales para cada canal
+
+**Sin columna Channel:**
+- Crea automáticamente un canal llamado "Total"
+- Análisis del tráfico total agregado sin separación por canales
+- Genera un conjunto único de modelos, gráficos y tablas
+
+Esta funcionalidad permite usar los mismos notebooks tanto para análisis detallados por canal como para análisis generales del tráfico total.
+
 ---
 
 ## Formato del CSV
@@ -58,26 +82,40 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 
 **Nombre de archivo:** `ga4_promtur_organic_2025.csv`
 
+**Columnas requeridas:**
+
 | Columna | Descripción |
 |---------|-------------|
 | `Year` | Año (2025) |
 | `Month` | Mes (1-12) |
-| `Channel` | Canal (Organic Search, AI Traffic, etc.) |
 | `Sessions` | Total de sesiones |
 | `Bounces` | Total de rebotes |
 | `Total session duration` | Duración total en segundos |
 | `Views` | Total de vistas |
 
+**Columna opcional:**
+
+| Columna | Descripción |
+|---------|-------------|
+| `Channel` | Canal (Organic Search, AI Traffic, etc.) - Si no existe, el análisis se realizará para el total agregado |
+
 ### Para usuarios
 
 **Nombre de archivo:** `ga4_promtur_organic_users_2025.csv`
+
+**Columnas requeridas:**
 
 | Columna | Descripción |
 |---------|-------------|
 | `Year` | Año (2025) |
 | `Month` | Mes (1-12) |
-| `Channel` | Canal (Organic Search, AI Traffic, etc.) |
 | `Users` | Total de usuarios |
+
+**Columna opcional:**
+
+| Columna | Descripción |
+|---------|-------------|
+| `Channel` | Canal (Organic Search, AI Traffic, etc.) - Si no existe, el análisis se realizará para el total agregado |
 
 **Nota:** Al subir tu archivo en Colab, será renombrado automáticamente al nombre esperado.
 
@@ -99,9 +137,11 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 
 **Gráficos:**
 - Comparativa histórico 2025 vs predicción 2026
-- 4 gráficos por canal (sessions, bounce_rate, views_per_session, avg_session_duration)
+- 4 gráficos por canal: sessions, bounce_rate, views_per_session, avg_session_duration
 - Intervalos de confianza visualizados
 - Advertencias para canales poco confiables
+
+**Nota:** Si tu dataset no incluye la columna Channel, se generará un único conjunto de archivos para el canal "Total".
 
 ### Usuarios (User Scope)
 
@@ -117,6 +157,8 @@ Sistema de forecasting automatizado que predice métricas clave de Google Analyt
 - Comparativa histórico 2025 vs predicción 2026 de usuarios por canal
 - Intervalos de confianza visualizados
 - Advertencias para canales poco confiables
+
+**Nota:** Si tu dataset no incluye la columna Channel, se generará un único conjunto de archivos para el canal "Total".
 
 ---
 
